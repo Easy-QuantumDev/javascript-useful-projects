@@ -8,4 +8,4 @@ function clear_display(){
 }
 function calculate( ){
     display.value = eval(display.value)
-}
+}   
