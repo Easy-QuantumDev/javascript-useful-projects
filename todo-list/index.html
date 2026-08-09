@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow - Todo List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div>
+                <p class="eyebrow">MY PRODUCTIVITY</p>
+                <h1>TaskFlow</h1>
+                <p class="subtitle">
+                    Organize your day, one task at a time.
+                </p>
+            </div>
+
+            <div class="date-box">
+                <span id="day">Monday</span>
+                <strong id="date">August 9</strong>
+            </div>
+
+        </header>
+
+
+        <!-- Add Task -->
+        <section class="add-task">
+
+            <div class="input-wrapper">
+
+                <span class="plus">+</span>
+
+                <input
+                    type="text"
+                    id="task-input"
+                    placeholder="What needs to be done?"
+                    autocomplete="off"
+                >
+
+            </div>
+
+            <button id="add-task">
+                Add Task
+            </button>
+
+        </section>
+
+
+        <!-- Stats -->
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <span class="stat-label">
+                    Total Tasks
+                </span>
+
+                <strong id="total-tasks">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-label">
+                    Active
+                </span>
+
+                <strong id="active-tasks">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-label">
+                    Completed
+                </span>
+
+                <strong id="completed-tasks">
+                    0
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- Todo Section -->
+        <section class="todo-section">
+
+            <!-- Toolbar -->
+            <div class="toolbar">
+
+                <div class="filters">
+
+                    <button
+                        class="filter active"
+                        data-filter="all"
+                    >
+                        All
+                    </button>
+
+                    <button
+                        class="filter"
+                        data-filter="active"
+                    >
+                        Active
+                    </button>
+
+                    <button
+                        class="filter"
+                        data-filter="completed"
+                    >
+                        Completed
+                    </button>
+
+                </div>
+
+
+                <button id="clear-completed">
+                    Clear completed
+                </button>
+
+            </div>
+
+
+            <!-- Todo List -->
+            <ul id="todo-list" class="todo-list">
+
+                <!-- JavaScript Tasks -->
+
+            </ul>
+
+
+            <!-- Empty State -->
+            <div id="empty-state" class="empty-state">
+
+                <div class="empty-icon">
+                    ✓
+                </div>
+
+                <h2>No tasks yet</h2>
+
+                <p>
+                    Add your first task and start being productive.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <span>
+                TaskFlow
+            </span>
+
+            <span>
+                Built with HTML • CSS • JavaScript
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
