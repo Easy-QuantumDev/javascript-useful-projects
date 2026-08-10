@@ -420,9 +420,9 @@ h1 {
 ========================= */
 
 .todo-check {
-    width: 23px;
+    width: 70px;
 
-    height: 23px;
+    height: 40px;
 
     display: flex;
 
@@ -430,13 +430,13 @@ h1 {
 
     align-items: center;
 
-    border: 2px solid #cdd2dc;
+    border: 1px solid green;
 
     border-radius: 7px;
 
     background: white;
 
-    color: white;
+    color: green;
 
     flex-shrink: 0;
 
@@ -450,8 +450,8 @@ h1 {
 
 .todo-check:hover {
     border-color: var(--success);
-
-    background: #ecfdf3;
+    color: white;
+    background: #22c55e;
 
     transform: scale(1.08);
 }
@@ -507,9 +507,11 @@ h1 {
     background: #fff7e6;
 
     color: var(--edit);
+    border: 1px solid yellow;
 
-    font-size: 12px;
-
+    font-size: 13px;
+    width: 70px;
+    height: 40px;
     font-weight: 600;
 
     transition: 0.2s;
@@ -535,9 +537,9 @@ h1 {
 ========================= */
 
 .delete-btn {
-    width: 32px;
+    width: 70px;
 
-    height: 32px;
+    height: 40px;
 
     display: flex;
 
@@ -555,9 +557,9 @@ h1 {
 
     font-weight: 600;
 
-    opacity: 0;
-
+    font-size: 13px;
     transition: 0.2s;
+    border: 1px solid red;
 }
 
 
@@ -571,7 +573,6 @@ h1 {
 
     color: white;
 
-    transform: translateY(-1px);
 }
 
 
@@ -647,6 +648,17 @@ h1 {
 }
 
 
+#error-message {
+    display: none;
+    background: #fff1f1;
+    color: #ef4444;
+    border: 1px solid #fecaca;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -717,14 +729,14 @@ h1 {
     .edit-btn {
         padding: 7px 9px;
 
-        font-size: 11px;
+        font-size: 13px;
     }
 
 
     .delete-btn {
-        width: 30px;
+        width: 50px;
 
-        height: 30px;
+        height: 50px;
 
         opacity: 1;
     }

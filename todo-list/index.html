@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,9 @@
 </head>
 
 <body>
-
+    
     <main class="app">
-
+        
         <!-- Header -->
         <header class="header">
 
@@ -39,12 +40,7 @@
 
                 <span class="plus">+</span>
 
-                <input
-                    type="text"
-                    id="task-input"
-                    placeholder="What needs to be done?"
-                    autocomplete="off"
-                >
+                <input type="text" id="task-input" placeholder="What needs to be done?" autocomplete="off">
 
             </div>
 
@@ -53,6 +49,7 @@
             </button>
 
         </section>
+    <div id="error-message"></div>
 
 
         <!-- Stats -->
@@ -107,24 +104,15 @@
 
                 <div class="filters">
 
-                    <button
-                        class="filter active"
-                        data-filter="all"
-                    >
+                    <button class="filter active" data-filter="all">
                         All
                     </button>
 
-                    <button
-                        class="filter"
-                        data-filter="active"
-                    >
+                    <button class="filter" data-filter="active">
                         Active
                     </button>
 
-                    <button
-                        class="filter"
-                        data-filter="completed"
-                    >
+                    <button class="filter" data-filter="completed">
                         Completed
                     </button>
 
@@ -152,15 +140,15 @@
                 <div class="empty-icon">
                     ✓
                 </div>
-
+                
                 <h2>No tasks yet</h2>
-
+                
                 <p>
                     Add your first task and start being productive.
                 </p>
-
+                
             </div>
-
+            
         </section>
 
 
@@ -179,8 +167,8 @@
 
     </main>
 
-
     <script src="script.js"></script>
 
 </body>
+
 </html>
