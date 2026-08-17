@@ -486,7 +486,13 @@ h1 {
 
     word-break: break-word;
 }
-
+.todo-text input{
+    width: 50%;
+    height: 50px;
+    outline: none;
+    box-shadow: 4px 6px 10px rgba(25, 30, 50, 0.08);
+    border-radius: 5px;
+}
 
 .todo-item.completed .todo-text {
     color: var(--muted);
@@ -749,3 +755,6 @@ h1 {
     }
 
 }
+
+
+
