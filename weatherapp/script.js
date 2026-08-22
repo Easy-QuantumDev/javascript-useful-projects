@@ -104,7 +104,7 @@ async function SearchWeather() {
 
             const code = daily["weather_code"][i]
 
-            const description = getWeatherDescription(code)
+            const description = getweatherdescription(code)
             const icon = getWeatherIcon(code)
             card.innerHTML = `<span>${i === 0 ? "Today" : day}</span>
 
@@ -130,7 +130,7 @@ async function SearchWeather() {
         error.style.display = 'block'
 
     }
-    finally{
+    finally {
         loading.style.display = "none"
         search_btn.disabled = false
     }
