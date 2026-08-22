@@ -9,10 +9,7 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -48,12 +45,7 @@
 
                 <i class="fa-solid fa-location-dot location-icon"></i>
 
-                <input
-                    type="text"
-                    id="city-input"
-                    placeholder="Search for a city..."
-                    autocomplete="off"
-                >
+                <input type="text" id="city-input" placeholder="Search for a city..." autocomplete="off">
 
                 <button id="search-btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -63,7 +55,7 @@
             </div>
 
             <p id="error-message" class="error-message"></p>
-
+            <p id="loading">loading weather</p>
         </section>
 
 
@@ -80,7 +72,7 @@
                     </p>
 
                     <h2 id="city-name">
-                        Tehran
+                        your city
                     </h2>
 
                     <p id="weather-description">
@@ -99,7 +91,7 @@
             <div class="temperature">
 
                 <span id="temperature">
-                    24
+                    
                 </span>
 
                 <span class="degree">
@@ -119,7 +111,7 @@
 
                     <div>
                         <span>Humidity</span>
-                        <strong id="humidity">45%</strong>
+                        <strong id="humidity"></strong>
                     </div>
 
                 </div>
@@ -133,7 +125,7 @@
 
                     <div>
                         <span>Wind</span>
-                        <strong id="wind">12 km/h</strong>
+                        <strong id="wind"></strong>
                     </div>
 
                 </div>
@@ -147,7 +139,7 @@
 
                     <div>
                         <span>Feels like</span>
-                        <strong id="feels-like">25°C</strong>
+                        <strong id="feels-like"></strong>
                     </div>
 
                 </div>
@@ -157,6 +149,7 @@
         </section>
 
 
+        <!-- Forecast -->
         <!-- Forecast -->
 
         <section class="forecast-section">
@@ -174,77 +167,11 @@
 
             </div>
 
-
-            <div class="forecast">
-
-                <div class="forecast-card">
-
-                    <span>Today</span>
-
-                    <i class="fa-solid fa-sun"></i>
-
-                    <strong>24°</strong>
-
-                    <small>Clear</small>
-
-                </div>
-
-
-                <div class="forecast-card">
-
-                    <span>Thu</span>
-
-                    <i class="fa-solid fa-cloud-sun"></i>
-
-                    <strong>22°</strong>
-
-                    <small>Cloudy</small>
-
-                </div>
-
-
-                <div class="forecast-card">
-
-                    <span>Fri</span>
-
-                    <i class="fa-solid fa-cloud-rain"></i>
-
-                    <strong>19°</strong>
-
-                    <small>Rain</small>
-
-                </div>
-
-
-                <div class="forecast-card">
-
-                    <span>Sat</span>
-
-                    <i class="fa-solid fa-sun"></i>
-
-                    <strong>25°</strong>
-
-                    <small>Sunny</small>
-
-                </div>
-
-
-                <div class="forecast-card">
-
-                    <span>Sun</span>
-
-                    <i class="fa-solid fa-cloud"></i>
-
-                    <strong>21°</strong>
-
-                    <small>Cloudy</small>
-
-                </div>
+            <div class="forecast" id="forecast">
 
             </div>
 
         </section>
-
 
         <!-- Footer -->
 

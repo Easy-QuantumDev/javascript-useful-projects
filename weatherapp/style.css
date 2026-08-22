@@ -280,6 +280,20 @@ button {
 }
 
 
+#loading {
+    display: none;
+    text-align: center;
+    color: var(--primary);
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+#search-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
 /* =========================
    WEATHER CARD
 ========================= */
