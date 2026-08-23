@@ -87,7 +87,7 @@ async function SearchWeather() {
 
         console.log(weather_data)
         humidity.textContent = `${humidity_value}`
-        wind.textContent = `{wind_value} km/h `
+        wind.textContent = `${wind_value} km/h `
         feels_like.textContent = `${feels_like_temp_value}°C `
         temperature.textContent = temperature_value
         city_name_seached.textContent = data['results'][0]['name']
